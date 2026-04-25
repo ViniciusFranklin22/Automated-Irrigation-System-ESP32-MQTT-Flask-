@@ -1,2 +1,67 @@
-# Automated-Irrigation-System-ESP32-MQTT-Flask-
-Smart irrigation system using ESP32, MQTT and Flask with real-time monitoring dashboard.
+# 🌿 Smart Irrigation System with ESP32 and IoT
+
+This project was developed for real-time plant monitoring and automatic irrigation using ESP32, MQTT, and a web-based interface.
+
+## 🚀 Features
+
+- 📡 Real-time monitoring:
+  - Soil moisture
+  - Temperature
+  - Air humidity
+  - Light intensity
+
+- 💧 Irrigation:
+  - Manual (via web button)
+  - Automatic (based on soil moisture threshold)
+
+- ⚙️ Remote configuration:
+  - Minimum soil moisture threshold
+  - Minimum interval between irrigations
+  - Pump activation time
+  - Enable/disable automatic mode
+  - Configuration is stored in ESP32 non-volatile memory, ensuring persistence after reboot
+
+- 📊 Web dashboard:
+  - Historical graphs (24h, 48h, 1 week)
+  - Device online/offline status
+  - Last irrigation timestamp
+  - Real data collected over several days
+  - Clear visualization of sensor behavior, including soil moisture changes after irrigation events
+
+## 🧠 Architecture
+
+ESP32 → MQTT → Backend (Flask) → Web Dashboard  
+ESP32 ← MQTT ← Backend (Flask) ← Web Dashboard  
+
+- ESP32 publishes sensor data via MQTT  
+- Backend stores data in CSV files using Pandas  
+- Web interface consumes data through a Flask API  
+- Commands are sent to the ESP32 via MQTT  
+
+## 🛠️ Technologies Used
+
+- Python (Flask, Pandas)  
+- MQTT (paho-mqtt)  
+- ESP32 (Arduino framework)  
+- HTML + Bootstrap + Chart.js  
+- KiCad  
+
+## 🔌 Hardware Design
+
+- Custom PCB designed using KiCad  
+- Project developed aiming toward a real-world product implementation  
+
+## 📷 Interface
+
+*(add screenshots here)*
+
+## ▶️ How to Run
+
+1. Configure your MQTT broker  
+2. Adjust file paths in the code  
+3. Run the data collection scripts:
+   - `server_get_msg.py`
+   - `server_get_msg_irrig.py`
+4. Start the Flask application:
+   ```bash
+   python main_flask.py
