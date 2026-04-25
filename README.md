@@ -57,6 +57,8 @@ ESP32 ← MQTT ← Backend (Flask) ← Web Dashboard
 - Sensors and ESP32 connected for real-world measurements  
 - System validated with real environmental data over multiple days  
 
+![System](system_protoboard.jpeg)
+
 ## 🧩 PCB Design
 
 - Custom PCB designed using KiCad  
