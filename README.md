@@ -53,7 +53,7 @@ ESP32 ← MQTT ← Backend (Flask) ← Web Dashboard
 
 ## 📷 Interface
 
-*(add screenshots here)*
+![Dashboard](dash.png)
 
 ## ▶️ How to Run
 
