@@ -11,7 +11,7 @@ import time
 app = Flask(__name__)
 
 app.config['SESSION_COOKIE_NAME'] = 'Projetos'
-app.secret_key = 'vascodagama1898**/1519xc1e98d498vqw1f98'
+app.secret_key = ''
 TOKEN_INFO = 'token_info'
 csv_path = 'C:\\Users\\vinic\\Documents\\Projetos_ESP32\\Laboratório de Projetos Eletrônicos\\Testes MQTT\\MQTT\\data.csv'
 csv_irrigacao_path = 'C:\\Users\\vinic\\Documents\\Projetos_ESP32\\Laboratório de Projetos Eletrônicos\\Testes MQTT\\MQTT\\irrigacao.csv'
