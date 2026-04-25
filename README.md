@@ -57,7 +57,9 @@ ESP32 ← MQTT ← Backend (Flask) ← Web Dashboard
 - Sensors and ESP32 connected for real-world measurements  
 - System validated with real environmental data over multiple days  
 
-![System](system_protoboard.jpeg)
+<p align="center">
+  <img src="system_protoboard.jpeg" width="400">
+</p>
 
 ## 🧩 PCB Design
 
@@ -66,7 +68,9 @@ ESP32 ← MQTT ← Backend (Flask) ← Web Dashboard
 
 ## 📷 Interface
 
-![Dashboard](dash.png)
+<p align="center">
+  <img src="dash.png" width="600">
+</p>
 
 ## ▶️ How to Run
 
