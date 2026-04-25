@@ -21,12 +21,17 @@ This project was developed for real-time plant monitoring and automatic irrigati
   - Enable/disable automatic mode
   - Configuration is stored in ESP32 non-volatile memory, ensuring persistence after reboot
 
+- 💡 System status indicators:
+  - LED indicator for Wi-Fi connection status  
+  - LED indicator for MQTT connection status  
+  - Provides quick visual feedback for system debugging and reliability
+
 - 📊 Web dashboard:
   - Historical graphs (24h, 48h, 1 week)
   - Device online/offline status
   - Last irrigation timestamp
   - Real data collected over several days
-  - Clear visualization of sensor behavior, including soil moisture changes after irrigation events
+  - Clear visualization of sensor behavior, including soil moisture variation after irrigation events
 
 ## 🧠 Architecture
 
@@ -46,10 +51,16 @@ ESP32 ← MQTT ← Backend (Flask) ← Web Dashboard
 - HTML + Bootstrap + Chart.js  
 - KiCad  
 
-## 🔌 Hardware Design
+## 🔌 Hardware Implementation
+
+- Prototype built using a breadboard for data acquisition and testing  
+- Sensors and ESP32 connected for real-world measurements  
+- System validated with real environmental data over multiple days  
+
+## 🧩 PCB Design
 
 - Custom PCB designed using KiCad  
-- Project developed aiming toward a real-world product implementation  
+- Developed aiming toward a future product-ready solution  
 
 ## 📷 Interface
 
